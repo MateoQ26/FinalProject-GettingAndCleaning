@@ -16,11 +16,17 @@ Codebook that describes the variables, and the data used for the analysis of the
 *** run_analysis.R
 The scrip that parses the dataset, from downloading to cleaning and building an ordered dataset:
 
+
 1- Download and unzip the data set.
+
 2- Merge the 'training' and 'test' sets.
+
 3- Extract the measurements from the mean and standard deviation for each measurement.
+
 4- Rename the activities with descriptive labels in the new data set
+
 5- Create a second data set ordered with the average of each variable for each activity and each subject.
+
 
 TidyDataset.txt is the final exported data after parsing and cleaning.
 
