@@ -47,3 +47,25 @@ Xdata: created by merging x_train and x_test using the rbind () function
 Ydata: created by merging y_train and y_test using the rbind () function
 Sub: created by merging subject_train and subject_test using rbind () function
 Merged: created by merging Sub, Y, and X using the cbind () function
+
+## Extract measurements from the mean and standard deviation for each measurement.
+
+selectData: is created by subsetting Merged, selecting only columns: Sub, Cod and the measurements in the 'mean' and 'std' for each measurement.
+
+Use: select ()
+
+## Rename activity tags.
+
+Cancel obvious abbreviations.
+
+Use: gsub ()
+
+## Create a second independent ordered data set with the average of each variable for each activity and each subject.
+
+TidyDataset: is created by summarizing selectData by taking the means of each variable for each activity and each subject, after grouping them by subject and activity.
+
+Use: group_by()
+
+Export to the TidyDataset.txt file.
+
+Use: write.table()
