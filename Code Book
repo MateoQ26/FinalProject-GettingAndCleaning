@@ -1,0 +1,39 @@
+# Code Book
+
+The run_analysis.R script performs the analysis of the data set.
+
+## Download the dataset
+Dataset downloaded and extracted in the folder called UCI Dataset HAR
+
+## Read the files.
+
+features = features.txt:
+The characteristics selected for this database.
+
+
+actLabels = activity_labels.txt:
+Activities carried out when the corresponding measures and their codes were taken.
+
+
+subTest = test / subject_test.txt: 2947 rows, 1 column
+contains test data from 9/30 observed voluntary test subjects
+
+
+subTrain = test / subject_train.txt:
+Contains train data for 21/30 observed voluntary subjects
+
+
+Xtest = test / X_test.txt:
+Contains registered feature test data
+
+
+Ytest = test / y_test.txt:
+Contains test data from activity code tags
+
+
+Xtrain = test / X_train.txt:
+Contains recorded data from the feature stream
+
+
+Ytrain = test / y_train.txt:
+Contains train data from activity code tags
