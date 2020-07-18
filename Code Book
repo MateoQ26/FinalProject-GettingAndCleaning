@@ -1,11 +1,13 @@
 # Code Book
 
 The run_analysis.R script performs the analysis of the data set.
+Use the libraries: 'dplyr' and 'data.table'.
 
 ## Download the dataset
 Dataset downloaded and extracted in the folder called UCI Dataset HAR
 
 ## Read the files.
+Use: read.table()
 
 features = features.txt:
 The characteristics selected for this database.
@@ -37,3 +39,11 @@ Contains recorded data from the feature stream
 
 Ytrain = test / y_train.txt:
 Contains train data from activity code tags
+
+
+## Merge the 'training' and 'test' sets to create a data set.
+
+Xdata: created by merging x_train and x_test using the rbind () function
+Ydata: created by merging y_train and y_test using the rbind () function
+Sub: created by merging subject_train and subject_test using rbind () function
+Merged: created by merging Sub, Y, and X using the cbind () function
